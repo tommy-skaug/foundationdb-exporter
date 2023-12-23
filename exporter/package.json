@@ -9,12 +9,13 @@
   },
   "devDependencies": {
     "@types/koa": "^2.13.12",
-    "@types/node": "^20.10.5",
-    "typescript": "~5.3.3"
+    "foundationdb": "^2.0.1",
+    "koa": "^2.14.2",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@types/koa": "^2.13.12",
     "env-var": "^7.4.1",
-    "foundationdb": "^2.0.1",
     "koa": "^2.14.2"
   }
 }

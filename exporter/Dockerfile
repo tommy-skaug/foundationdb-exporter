@@ -7,11 +7,11 @@ RUN wget -q https://github.com/apple/foundationdb/releases/download/7.3.27/found
 
 WORKDIR /app
 
-COPY package.json yarn.lock ./
-RUN yarn
+COPY package.json pnpm-lock.yaml ./
 
 COPY . .
-RUN yarn build
+RUN pnpm install -D typescript
+RUN pnpm build
 
 FROM node:21.5.0-bookworm
 
@@ -23,7 +23,8 @@ RUN wget -q https://github.com/apple/foundationdb/releases/download/7.3.27/found
 WORKDIR /app
 
 COPY package.json yarn.lock ./
-RUN yarn --prod
+RUN pnpm install -D typescript
+RUN pnpm install -P
 
 COPY --from=builder /app/build /app/build
 
