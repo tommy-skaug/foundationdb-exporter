@@ -5,11 +5,6 @@ Prometheus exporter for FoundationDB. Exports values from FoundationDB
 
 ## Usage
 
-Run Docker container from image
-[`aikoven/foundationdb-exporter`](https://hub.docker.com/r/aikoven/foundationdb-exporter).
-
-See [`docker-compose.yml`](/docker-compose.yml) on how to mount and configure Cluster File.
-
 Metrics are exposed on `:9444/metrics` endpoint.
 
 ## Supported Metrics
@@ -18,6 +13,6 @@ See the [source code](/exporter/src/metrics.ts).
 
 ## Grafana Dashboard
 
-This repository includes [Grafana dashboard](/grafana/foundationdb.json).
+This repository includes [Grafana dashboard](/grafana-dashboard.json).
 
 ![Grafana Dashboard](/docs/grafana.png)
