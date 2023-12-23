@@ -22,7 +22,7 @@ RUN wget -q https://github.com/apple/foundationdb/releases/download/7.3.27/found
 
 WORKDIR /app
 
-COPY package.json yarn.lock ./
+COPY package.json pnpm-lock.yaml ./
 RUN pnpm install -D typescript
 RUN pnpm install -P
 
