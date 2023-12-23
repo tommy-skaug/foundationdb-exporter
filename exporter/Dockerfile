@@ -1,6 +1,6 @@
 FROM node:21.5.0-bookworm as builder
 
-RUN apt update && apt install nodejs npm pnpm
+RUN npm install -g pnpm
 
 # install FoundationDB client library
 RUN wget -q https://github.com/apple/foundationdb/releases/download/7.3.27/foundationdb-clients_7.3.27-1_amd64.deb \
@@ -17,7 +17,7 @@ RUN pnpm build
 
 FROM node:21.5.0-bookworm
 
-RUN apt update && apt install nodejs npm pnpm
+RUN npm install -g pnpm
 
 # install FoundationDB client library
 RUN wget -q https://github.com/apple/foundationdb/releases/download/7.3.27/foundationdb-clients_7.3.27-1_amd64.deb \
