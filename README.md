@@ -1,4 +1,4 @@
-# FoundationDB v7 Exporter
+# FoundationDB v7 Prometheus Exporter
 
 &nbsp;
 

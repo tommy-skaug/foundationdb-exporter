@@ -9,9 +9,8 @@ RUN wget -q https://github.com/apple/foundationdb/releases/download/7.3.27/found
 
 WORKDIR /app
 
-COPY package.json pnpm-lock.yaml ./
+COPY ./src/ .
 
-COPY . .
 RUN pnpm install -D typescript
 RUN pnpm build
 
@@ -25,8 +24,8 @@ RUN wget -q https://github.com/apple/foundationdb/releases/download/7.3.27/found
   && rm foundationdb-clients_7.3.27-1_amd64.deb
 
 WORKDIR /app
+COPY ./src/ .
 
-COPY package.json pnpm-lock.yaml ./
 RUN pnpm install -D typescript
 RUN pnpm install -P
 
