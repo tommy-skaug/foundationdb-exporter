@@ -11,14 +11,14 @@ dependencies:
   env-var:
     specifier: ^7.4.1
     version: 7.4.1
+  foundationdb:
+    specifier: ^2.0.1
+    version: 2.0.1
   koa:
     specifier: ^2.14.2
     version: 2.14.2
 
 devDependencies:
-  foundationdb:
-    specifier: ^2.0.1
-    version: 2.0.1
   typescript:
     specifier: ^5.3.3
     version: 5.3.3
@@ -239,7 +239,7 @@ packages:
 
   /fdb-tuple@1.0.0:
     resolution: {integrity: sha512-8jSvKPCYCgTpi9Pt87qlfTk6griyMx4Gk3Xv31Dp72Qp8b6XgIyFsMm8KzPmFJ9iJ8K4pGvRxvOS8D0XGnrkjw==}
-    dev: true
+    dev: false
 
   /foundationdb@2.0.1:
     resolution: {integrity: sha512-ZMmpAoEI88H8d4DWk6MzXf4Kw9pGaQrxNygVdz/7g+qwlMrjHvmxUQsQz1zG4176+B0YNY+ufgmcT40kEv/TnQ==}
@@ -248,7 +248,7 @@ packages:
     dependencies:
       fdb-tuple: 1.0.0
       node-gyp-build: 4.7.1
-    dev: true
+    dev: false
 
   /fresh@0.5.2:
     resolution: {integrity: sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==}
@@ -344,7 +344,7 @@ packages:
       type-is: 1.6.18
       vary: 1.1.2
     transitivePeerDependencies:
-      - supports-color
+    - supports-color
     dev: false
 
   /media-typer@0.3.0:
@@ -376,7 +376,7 @@ packages:
   /node-gyp-build@4.7.1:
     resolution: {integrity: sha512-wTSrZ+8lsRRa3I3H8Xr65dLWSgCvY2l4AOnaeKdPA9TB/WYMPaTcrzf3rXvFoVvjKNVnu0CcWSx54qq9GKRUYg==}
     hasBin: true
-    dev: true
+    dev: false
 
   /on-finished@2.4.1:
     resolution: {integrity: sha512-oVlzkg3ENAhCk2zdv7IJwd/QUD4z2RxRwpkcGY8psCVcCYZNq4wYnVWALHM+brtuJjePWiYF/ClmuDr8Ch5+kg==}
