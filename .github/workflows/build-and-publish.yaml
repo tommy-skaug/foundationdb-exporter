@@ -8,7 +8,7 @@ on:
     - 'src/**'
 env:
   # renovate: depName=github.com/tommy-skaug/foundationdb-exporter
-  FDBE_VERSION: "v0.5.1"
+  FDBE_VERSION: "v0.5.2"
 
 jobs:
   push_to_registry:
@@ -31,6 +31,6 @@ jobs:
     - name: Build and push image
       uses: docker/build-push-action@v5
       with:
-        context: ./exporter
+        context: ./src
         push: true
         tags: ghcr.io/${{ github.repository }}:${{ env.FDBE_VERSION }}
