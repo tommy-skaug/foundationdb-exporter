@@ -11,7 +11,7 @@ WORKDIR /app
 
 COPY ./src/ .
 
-RUN pnpm install -P
+RUN pnpm install typescript
 RUN pnpm build
 
 FROM node:21.5.0-bookworm
