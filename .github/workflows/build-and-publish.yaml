@@ -8,7 +8,7 @@ on:
     - 'src/**'
 env:
   # renovate: depName=github.com/tommy-skaug/foundationdb-exporter
-  FDBE_VERSION: "v0.5.2"
+  FDBE_VERSION: "v0.5.3"
 
 jobs:
   push_to_registry:
