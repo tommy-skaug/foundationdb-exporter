@@ -344,7 +344,7 @@ packages:
       type-is: 1.6.18
       vary: 1.1.2
     transitivePeerDependencies:
-    - supports-color
+      - supports-color
     dev: false
 
   /media-typer@0.3.0:
