@@ -1,10 +1,4 @@
-# FoundationDB v7 Prometheus Exporter
-
-&nbsp;
-
-[![Publish Docker image](https://github.com/tommy-skaug/foundationdb-exporter/actions/workflows/build-and-publish.yaml/badge.svg)](https://github.com/tommy-skaug/foundationdb-exporter/actions/workflows/build-and-publish.yaml)
-
-&nbsp;
+# FoundationDB v7 Prometheus Exporter [![Publish Docker image](https://github.com/tommy-skaug/foundationdb-exporter/actions/workflows/build-and-publish.yaml/badge.svg)](https://github.com/tommy-skaug/foundationdb-exporter/actions/workflows/build-and-publish.yaml)
 
 Prometheus exporter for FoundationDB v7. Exports values from FoundationDB
 [Machine-Readable Status](https://apple.github.io/foundationdb/mr-status.html).
