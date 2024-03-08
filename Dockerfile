@@ -1,4 +1,4 @@
-FROM node:21.6.2-bookworm as builder
+FROM node:21.7.0-bookworm as builder
 
 RUN npm install -g pnpm
 
@@ -14,7 +14,7 @@ COPY ./src/ .
 RUN pnpm install typescript
 RUN pnpm build
 
-FROM node:21.6.2-bookworm
+FROM node:21.7.0-bookworm
 
 RUN npm install -g pnpm
 
